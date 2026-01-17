@@ -1,0 +1,11 @@
+torch>=2.0.0
+torch-geometric>=2.3.0
+torch-scatter
+torch-sparse
+torch-cluster
+plotly>=5.15.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+seaborn>=0.12.0
+matplotlib>=3.7.0
+numpy>=1.24.0
