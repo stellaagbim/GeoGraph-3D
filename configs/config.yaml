@@ -1,0 +1,22 @@
+# GeoGraph-3D Experiment Configuration
+experiment_name: "dgcnn_modelnet10_baseline"
+device: "cuda"
+
+data:
+  root: "data/ModelNet10"
+  num_points: 1024
+  batch_size: 32
+  num_workers: 4
+
+model:
+  k: 20              # Dynamic Graph Neighbors
+  emb_dims: 1024     # Global feature dimension
+  dropout: 0.5       # Regularization probability
+
+train:
+  epochs: 50
+  lr: 0.001
+  momentum: 0.9
+  weight_decay: 1e-4
+  scheduler: "cosine"  # cosine or step
+  seed: 42
